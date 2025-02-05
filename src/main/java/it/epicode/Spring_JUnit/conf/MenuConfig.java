@@ -13,7 +13,6 @@ import java.util.List;
 @Configuration
 @RequiredArgsConstructor
 public class MenuConfig {
-    private final Topping salame, cotto, pomodoro, mozzarella;
     private final Pizza margherita, diavola, prosciutto;
     private final Bevanda acqua, fanta, cocaCola;
 
