@@ -29,4 +29,17 @@ public class OrdineConfig {
         o.setListaElementiOrdine(List.of(menu.getVoceMenu().get(0), menu.getVoceMenu().get(1), menu.getVoceMenu().get(2)));
         return o;
     }
+
+    @Bean
+    public Ordine newOrdine() {
+        Ordine o = new Ordine();
+
+        o.setNumeroOrdine(2);
+        o.setTavolo(tavolo);
+        o.setStatoOrdine(StatoOrdine.SERVITO);
+        o.setNumeroCoperti(3);
+        o.setCostoCoperto(2);
+        o.setListaElementiOrdine(List.of(menu.getVoceMenu().get(0), menu.getVoceMenu().get(2), menu.getVoceMenu().get(4)));
+        return o;
+    }
 }
