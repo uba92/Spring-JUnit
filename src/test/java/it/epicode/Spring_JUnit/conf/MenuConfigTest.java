@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-//import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 public class MenuConfigTest {
@@ -23,9 +23,9 @@ public class MenuConfigTest {
         assertEquals(6, menu.getVoceMenu().size());
     }
 
-//    @Test
-//    @DisplayName("test menu Bean - Verifica che la lista voceMenu non sia null")
-//    public void testMenuBean2() {
-//        assertNotNull(menu.getVoceMenu());
-//    }
+    @Test
+    @DisplayName("test menu Bean - Verifica che la lista voceMenu non sia null")
+    public void testMenuBean2() {
+        assertNotNull(menu.getVoceMenu());
+    }
 }
